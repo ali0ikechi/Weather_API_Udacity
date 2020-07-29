@@ -1,0 +1,145 @@
+body {
+  font-family: arial, sans-serif;
+}
+
+#time {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+  color: black;
+}
+
+.units {
+  font-size: 15px;
+  text-align: right;
+  margin-bottom: 0em;
+  margin-top: -2em;
+}
+.C,
+.F {
+  transition: all 200ms ease-in-out;
+}
+
+.C:hover,
+.F:hover {
+  cursor: pointer;
+  color: red;
+  font-weight: 700;
+}
+
+#search_bar {
+  border: transparent;
+  margin-bottom: 0em;
+  margin-right: 40px;
+  margin-top: 0;
+}
+#search_icon {
+  background-color: transparent;
+  font-size: 25px;
+  margin-bottom: 0em;
+  margin-left: 50px;
+  margin-top: 0;
+  border: none;
+}
+hr {
+  background: #000000;
+  height: 3px;
+  border-width: 0px;
+  max-width: 600px;
+  margin: 5px auto;
+}
+
+#city {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+#date {
+  margin-top: 3px;
+  font-size: 20px;
+}
+
+h1 {
+  margin-top: 7px;
+  text-align: center;
+  font-size: 150px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+#description {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#description::first-letter {
+  text-transform: capitalize;
+}
+
+#max_min {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h4 {
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+#humidity {
+  text-align: right;
+}
+
+#hourly {
+  margin-top: 10px;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+.weather_app_wrapper {
+  max-width: 600px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.weather_app {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  padding: 30px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+
+.weather-forecast {
+  margin-top: 10px;
+  box-sizing: border-box;
+  color: rgb(33, 37, 41);
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.col-2 {
+  box-sizing: border-box;
+  display: block;
+}
+
+h3 {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.forecast_img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+small {
+  display: block;
+  text-align: center;
+}
