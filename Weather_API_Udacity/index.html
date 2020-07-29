@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimpleWeather</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/140dc4f497.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather_app_wrapper>">
+        <div class="weather_app">
+          <h6 id="time">02:48</h6>
+          <div class="units">
+            <span class="C" id="celsius-link">°C</span> |
+            <span class="F" id="fahrenheit-link">°F</span>
+          </div>
+          <br />
+          <br />
+          <form
+            class="form-inline d-flex justify-content-center md-form form-sm"
+            id="search-form"
+          >
+            <input
+              class="form-control form-control-sm mr-3 w-75"
+              type="text"
+              placeholder="Where to?"
+              aria-label="Search"
+              id="search_bar"
+            />
+            <button type="submit" id="search_icon">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <hr />
+          <h2 id="city">Berlin</h2>
+          <h3 id="date">Sunday — 14 June</h3>
+          <h1><span id="temperature">21</span>°</h1>
+          <div class="row descriptions">
+            <div class="col-6">
+              <h3 id="description">It is fucking raining</h3>
+            </div>
+            <div class="col-6">
+              <h3 id="max_min">16° — 22°</h3>
+            </div>
+          </div>
+          <br />
+          <div class="row details" id="detail">
+            <div class="col-6" id="wind">
+              <h4><strong>Wind:</strong> 14 km/h</h4>
+            </div>
+            <div class="col-6" id="humidity">
+              <h4><strong>Humidity:</strong> 30%</h4>
+            </div>
+          </div>
+          <br />
+          <h3 id="hourly">Hourly</h3>
+          <hr />
+          <br />
+          <div class="row weather-forecast" id="forecast">
+            <div class="col-2">
+              <h3>14:00</h3>
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                class="forecast_img"
+              />
+              <div class="weather-forecast-temp"><strong>21</strong> 20</div>
+            </div>
+            <div class="col-2">
+              <h3>14:00</h3>
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                class="forecast_img"
+              />
+              <div class="weather-forecast-temp"><strong>21</strong> 20</div>
+            </div>
+            <div class="col-2">
+              <h3>14:00</h3>
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                class="forecast_img"
+              />
+              <div class="weather-forecast-temp"><strong>21</strong> 20</div>
+            </div>
+            <div class="col-2">
+              <h3>14:00</h3>
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                class="forecast_img"
+              />
+              <div class="weather-forecast-temp"><strong>21</strong> 20</div>
+            </div>
+            <div class="col-2">
+              <h3>14:00</h3>
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                class="forecast_img"
+              />
+              <div class="weather-forecast-temp"><strong>21</strong> 20</div>
+            </div>
+            <div class="col-2">
+              <h3>14:00</h3>
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                class="forecast_img"
+              />
+              <div class="weather-forecast-temp"><strong>21</strong> 20</div>
+            </div>
+          </div>
+        </div>
+        <small class="small">
+          <a
+            href="https://github.com/ali0ikechi/SheCodes_Final-Project"
+            target="_blank"
+            >Open Source Code </a
+          >by Arisa
+        </small>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
