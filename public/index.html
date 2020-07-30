@@ -21,26 +21,25 @@
     <div class="container">
       <div class="weather_app_wrapper>">
         <div class="weather_app">
-          <h6 id="time">02:48</h6>
-          <div class="units">
-            <span class="C" id="celsius-link">°C</span> |
-            <span class="F" id="fahrenheit-link">°F</span>
-          </div>
-          <br />
+          <h2 id="title">Weather By Code</h2>
           <br />
           <form
             class="form-inline d-flex justify-content-center md-form form-sm"
             id="search-form"
           >
-            <input
-              class="form-control form-control-sm mr-3 w-75"
-              type="text"
-              placeholder="Enter Zipcode"
-              aria-label="Search"
-              id="search_bar"
-            />
+            <div class="holder zip">
+              <input type="text" placeholder="Enter Zipcode" id="zip" />
+            </div>
+            <div class="holder feeling">
+              <textarea
+                id="feelings"
+                cols="30"
+                rows="10"
+                placeholder="How are you today?"
+              ></textarea>
+            </div>
             <button type="submit" id="search_icon">
-              <i class="fas fa-search"></i>
+              <i class="far fa-meh"></i>
             </button>
           </form>
           <hr />
